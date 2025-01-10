@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 72, 82);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.container h1{
+    font-size: 10vh;
+    background: linear-gradient(to right, rgb(219, 213, 213), rgb(95, 95, 135), rgb(234, 0, 206));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container h2{
+    font-size: 3vh;
+    color: aliceblue;
+}
+
+/* prompt   styling */
+.prompt-area{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(61, 72, 82);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#prompt{
+    width: 60%;
+    height: 60%;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px 0px 0px 30px;
+    box-shadow: inset black 0px 0px 6px ;
+}
+
+#btn{
+    width: 10%;
+    height: 60%;
+    background-color: rgb(156, 102, 139);
+    border: none;
+    border-radius: 0px 30px 30px 0px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s all;
+}
+
+#btn:hover{
+    background-color: rgb(122, 83, 109);
+}
+
+/* Chat section styling */
+.chat-container{
+    width: 100%;
+    max-height: cal(100vh -80px);
+    /* overflow-y: auto; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 100px;
+}
+
+.user-chat-box{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(81, 153, 216);
+    border-radius: 30px 30px 0 30px;
+    font-size: 20px;
+}
+
+.ai-chat-box{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(97, 147, 192);
+    border-radius: 30px 30px 30px 0px;
+    font-size: 20px;
+    color: white;
+}
+
+.img{
+    width: 80px;
+    height: 100%;
+}
