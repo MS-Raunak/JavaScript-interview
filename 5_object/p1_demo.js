@@ -22,7 +22,7 @@ const personObj = {
 };
 
 // ACCESSING OBJECT USING KEY  BY DOT(.) NOTATION
-/**console.log(personObj.name);*/
+//console.log(personObj['full name']);
 
 //ACCESSING OBJECT USING KEY BY [] NOTATION
 /**console.log(personObj['age']);*/
